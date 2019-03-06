@@ -17,7 +17,7 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Enumeration;
 import java.util.Vector;
-import  java.awt.Toolkit;
+import java.awt.Toolkit;
 
 public class Boot{
 	
@@ -197,7 +197,6 @@ public class Boot{
 	}
 
     public final static void main(String[] args) throws Exception {
-    
     	Boot ob = new Boot();
     	ob.disp();
     }
