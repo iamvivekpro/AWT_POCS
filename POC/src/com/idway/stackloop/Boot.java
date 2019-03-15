@@ -20,7 +20,6 @@ import java.util.Vector;
 import java.awt.Toolkit;
 
 public class Boot{
-	
 	long countTime=0;
 	private FontMetrics fontMetrics;
 	Font f1 = new Font("DV-OTSitaraLight" , Font.PLAIN , 20);
@@ -116,15 +115,15 @@ public class Boot{
 //		}
 		long t2=System.currentTimeMillis();
 		System.out.println("\t\tRendering Time for English is ="+(t2-t1));
-//		int i=0;
-//		long t3=System.currentTimeMillis();
-//		for(int j=0;j<ArrHindi.length;j++) {
-//			wrapText(ArrHindi[j], 200);
-//			//g.drawString(Arrays.toString(wrapText(ArrHindi[j], 200)).replace('[', ' ').replace(']',' '), 20,20 + i*20);
-//			
-//		}
-//		long t4=System.currentTimeMillis();
-//		System.out.println("\t\tRendering Time for Hindi is ="+(t4-t3));	
+		int i=0;
+		long t3=System.currentTimeMillis();
+		for(int j=0;j<ArrHindi.length;j++) {
+			wrapText(ArrHindi[j], 200);
+			//g.drawString(Arrays.toString(wrapText(ArrHindi[j], 200)).replace('[', ' ').replace(']',' '), 20,20 + i*20);
+			
+		}
+		long t4=System.currentTimeMillis();
+		System.out.println("\t\tRendering Time for Hindi is ="+(t4-t3));	
 	}
 	public int  charWidth(char ch) {
 		if (fontMetrics == null) {	
